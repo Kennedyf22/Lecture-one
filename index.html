@@ -4,8 +4,17 @@
         <title>My Web page</title>
     </head>
         <style>
-            ol li{
+            ol > li{
                 color:blue;
+            }
+            input[type=text]{
+                background-color: red;
+            }
+            input[type=number]{
+                background-color: blue;
+            }
+            input[type=password]{
+                background-color: yellow;
             }
         </style>
     <body>
@@ -33,8 +42,10 @@
         <form>
 
             <div>
-                <input name="name" type="text" placeholder="Name">
-                <input name="password" type="password" placeholder="Password">
+                <p><input name="name" type="text" placeholder="First Name">
+                <input name="name" type="text" placeholder="Last Name"></p>
+                <p><input name="name" type="number" placeholder="Age">
+                <input name="password" type="password" placeholder="Password"></p>
             </div>
 
             <div>
@@ -46,6 +57,7 @@
             </div>
 
             <div>
+                <p>Where are you from?</p>
                 <input name="country" list="countries" placeholder="Country">
                 <datalist id="countries">
                     <option value="Afeghanistan">

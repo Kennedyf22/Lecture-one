@@ -25,9 +25,20 @@
             button:hover{
                 background-color: orange;
             }
+            input[placeholder]:hover{
+                background-color: white;
+            }
+            a::before{
+                content: "\21d2 Click here: ";
+                font-weight: bold;
+            }
+            p::selection{
+                color:red;
+                background-color:yellow;
+            }
         </style>
     <body>
-        <button><a href="hello.html">Click here</a></button>
+        <button><a href="hello.html"></a></button>
         <p>Here is the new branch contents.</p>    
         <h2>Table of Contents</h2>
         <ul>

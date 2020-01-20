@@ -36,6 +36,11 @@
                 color:red;
                 background-color:yellow;
             }
+            @media print{
+                .screen-only{
+                    display: none;
+                }
+            }
         </style>
     <body>
         <button><a href="hello.html"></a></button>
@@ -101,5 +106,7 @@
             <li>Second list here</li>
             <li>Another item</li>
         </ul>
+        <p>This is a paragraph</p>
+        <p class="screen-only">This paragraph won't appear when you print this page</p>
     </body>
 </html>

@@ -3,6 +3,7 @@
     <head>
         <title>My Web page</title>
     </head>
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <style>
             h1{
                 font-size: 50px;
@@ -44,7 +45,7 @@
                 background-color: white;
             }
             a::before{
-                content: "\21d2 Click here: ";
+                content: "\21d2 Click here";
                 font-weight: bold;
             }
             p::selection{
@@ -66,9 +67,30 @@
                     background-color:blue;
                 }
             }
+            @media (min-width:500px){
+                h1::before{
+                    content:"Welcome to Index!";
+                }
+            }
+            @media (max-width:499px){
+                h1::before{
+                    content:"Welcome!";
+                }
+            }    
+            .Container{
+                display:flex;
+                flex-wrap:wrap;
+            }
+            .Container > div{
+                background-color:springgreen;
+                font-size: 20px;
+                margin:20px;
+                padding:20px;
+                width:200px;
+            }
         </style>
     <body>
-        <h1>Welcome to Index</h1>
+        <h1></h1>
         <p style="color:red;text-align:center;font-size:28px;font-weight:bold;">This page is just a test. It's still not working.</p>
         <button><a href="hello.html"></a></button>
         <p>Here is the new branch contents.</p>    
@@ -135,5 +157,11 @@
         </ul>
         <p>This is a paragraph</p>
         <p class="screen-only">This paragraph won't appear when you print this page</p>
+        <div class="Container">
+            <div>A. In the beginning God created the heaven and the earth.</div>
+            <div>B. And God made two great lights; the greater light to rule the day, and the lesser light to rule the night: he made the stars also.</div>
+            <div>C. So God created man in his own image, in the image of God created he him; male and female created he them.</div>
+            <div>D. And God saw every thing that he had made, and, behold, it was very good. And the evening and the morning were the sixth day.</div>
+        </div>
     </body>
 </html>

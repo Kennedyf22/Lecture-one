@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Web page</title>
-    </head>
+        <title>My Web page</title>    
         <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <style>
             h1{
@@ -88,7 +87,26 @@
                 padding:20px;
                 width:200px;
             }
+            div::selection{                
+                color:lightblue;
+                background-color: darkgreen;
+            }
+            .grid{
+                background-color:green;
+                display:grid;
+                padding:20px;
+                grid-column-gap:20px;
+                grid-row-gap:10px;
+                grid-template-columns:auto auto auto;
+            }
+            .grid-item{
+                background-color:white;
+                font-size:20px;
+                padding:20 px;
+                text-align:center;
+            }
         </style>
+    </head>
     <body>
         <h1></h1>
         <p style="color:red;text-align:center;font-size:28px;font-weight:bold;">This page is just a test. It's still not working.</p>
@@ -162,6 +180,20 @@
             <div>B. And God made two great lights; the greater light to rule the day, and the lesser light to rule the night: he made the stars also.</div>
             <div>C. So God created man in his own image, in the image of God created he him; male and female created he them.</div>
             <div>D. And God saw every thing that he had made, and, behold, it was very good. And the evening and the morning were the sixth day.</div>
+        </div>
+        <div class="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
         </div>
     </body>
 </html>
